@@ -2,10 +2,17 @@
   "name": "dog-energy-needs-ms",
   "version": "1.0.0",
   "description": "Microservice that responds with how much exercise a dog needs based on their energy level.",
-  "main": "index.js",
+  "main": "reply_energy_needs.mjs",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon reply_energy_needs.mjs"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.19.2",
+    "nodemon": "^2.0.22"
+  }
 }
